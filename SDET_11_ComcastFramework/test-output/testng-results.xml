@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9136" started-at="2021-03-05T17:11:27 IST" finished-at="2021-03-05T17:11:37 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9136" started-at="2021-03-05T17:11:27 IST" finished-at="2021-03-05T17:11:37 IST">
+      <class name="com.crm.autodesk.organizationtest.CreateOrganization">
+        <test-method status="PASS" signature="createOrgtest()[pri:0, instance:com.crm.autodesk.organizationtest.CreateOrganization@6895a785]" name="createOrgtest" duration-ms="9097" started-at="2021-03-05T17:11:28 IST" finished-at="2021-03-05T17:11:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgtest -->
+      </class> <!-- com.crm.autodesk.organizationtest.CreateOrganization -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
