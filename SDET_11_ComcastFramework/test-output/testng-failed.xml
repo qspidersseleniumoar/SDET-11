@@ -3,11 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.autodesk.organizationtest.CreateOrganization">
+      <class name="com.crm.autodesk.contacttest.CreateContact">
         <methods>
-          <include name="createOrgtest"/>
+          <include name="configAM"/>
+          <include name="cretecontact"/>
+          <include name="configBM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
         </methods>
-      </class> <!-- com.crm.autodesk.organizationtest.CreateOrganization -->
+      </class> <!-- com.crm.autodesk.contacttest.CreateContact -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

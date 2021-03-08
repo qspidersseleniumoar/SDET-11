@@ -50,6 +50,20 @@ public class WebDriverUtiles {
 		 WebDriverWait wait = new WebDriverWait(driver, IConstant.explicitlyWaitWiat);
 		 wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
+	
+	
+	public void waitforElementToVisibale(WebDriver driver , WebElement element) {
+		 WebDriverWait wait = new WebDriverWait(driver, IConstant.explicitlyWaitWiat);
+		 wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	public void waitForElemnetContainsText(WebDriver driver , WebElement element , String text) {
+		 WebDriverWait wait = new WebDriverWait(driver, IConstant.explicitlyWaitWiat);
+		 wait.until(ExpectedConditions.textToBePresentInElement(element, text));
+	}
+	
+	
+	
 	/**
 	 * wait for DOM document to be load before finding any elemnet in GUI
 	 * @param driver
