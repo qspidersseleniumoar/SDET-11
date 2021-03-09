@@ -31,7 +31,7 @@ import com.crm.comcast.objectrepositoryutility.Organizations;
  */
 public class CreateContact extends BaseClass{
 
-	@Test
+	@Test(groups = "smokeTest")
 	public void cretecontact() throws Throwable {
 		 
 		 /*read test script data */ 
@@ -58,7 +58,7 @@ public class CreateContact extends BaseClass{
 	}
 
 
-	@Test
+	@Test(groups = "regressionTest")
 	public void cretecontactwithORg() throws Throwable {
 			
 		 /*read test script data */ 

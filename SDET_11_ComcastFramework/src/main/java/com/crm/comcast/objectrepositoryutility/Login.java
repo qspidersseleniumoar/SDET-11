@@ -18,7 +18,7 @@ public class Login {   /*Rule 1 */
 	}
   
 
-      @FindAll({ @FindBy(id = "userid") , @FindBy(name = "user_name")})
+      @FindAll({ @FindBy(name = "user_name"),@FindBy(id = "userid") , })
       private WebElement userNameEdt;
       
       
