@@ -1,10 +1,14 @@
 package com.crm.comcast.genericlib;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -12,7 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.mysql.cj.jdbc.Driver;
+import com.google.common.io.Files;
 
 /**
  * 
@@ -174,6 +178,13 @@ public class WebDriverUtiles {
 	   
 	}
    
-	
+	public String takeScreenshot(WebDriver driver,String methodName) throws IOException {
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File src=ts.getScreenshotAs(OutputType.FILE);
+		String screenShotpath=System.getProperty("user.dir")+"/Screenshot/"+methodName+JavaUtils.getDateAndTime()+".png";
+		File dest=new File(screenShotpath);
+		Files.copy(src, dest);
+		return screenShotpath;
+	}
 
 }

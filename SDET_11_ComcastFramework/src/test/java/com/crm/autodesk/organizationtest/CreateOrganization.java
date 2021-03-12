@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.comcast.genericlib.BaseClass;
@@ -20,6 +21,7 @@ import com.crm.comcast.objectrepositoryutility.Organizations;
  * @author Deepak
  *
  */
+@Listeners(com.crm.comcast.genericlib.ListenerIMP.class)
 public class CreateOrganization extends BaseClass{
 
 	@Test(groups = "smokeTest")

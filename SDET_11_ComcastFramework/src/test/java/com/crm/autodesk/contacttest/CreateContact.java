@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.comcast.genericlib.BaseClass;
@@ -29,6 +30,7 @@ import com.crm.comcast.objectrepositoryutility.Organizations;
  * @author Deepak
  *
  */
+@Listeners(com.crm.comcast.genericlib.ListenerIMP.class)
 public class CreateContact extends BaseClass{
 
 	@Test(groups = "smokeTest")
@@ -95,7 +97,7 @@ public class CreateContact extends BaseClass{
 		  ContactInfoPage cip = new ContactInfoPage(driver);
 		  String actContactNAme = cip.getSuccessMsg().getText();
 		  boolean flag = actContactNAme.contains(conatctNAme);		  
-		  Assert.assertTrue(flag);
+		  Assert.assertTrue(false);
 
 	}
 

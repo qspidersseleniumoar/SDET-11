@@ -45,5 +45,10 @@ public class JavaUtils {
 		String[] arr = currentDate.split(" ");
 		return arr[2];
    	}
+    
+    public static String getDateAndTime() {
+    	Date date=new Date();
+    	return date.toString().replace(" ", "_").replace(":", "_");
+    }
 
 }

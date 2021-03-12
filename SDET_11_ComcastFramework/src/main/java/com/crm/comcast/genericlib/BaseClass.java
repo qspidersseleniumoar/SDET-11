@@ -25,6 +25,7 @@ public class BaseClass {
 	public  WebDriverUtiles wLib = new WebDriverUtiles();
 	public DataBaseUtilities dbLib = new DataBaseUtilities();
 	public  WebDriver driver;
+	public static WebDriver staticDriver;
 	
 	@BeforeSuite(groups = {"smokeTest","s"})
 	public void configBS() {
@@ -32,14 +33,14 @@ public class BaseClass {
 		dbLib.connectToDB();
 	}
 	
-	@Parameters("Browser")
+	//@Parameters("Browser")
 	@BeforeClass(groups = {"smokeTest","regressionTest"})
-	public void configBC(String BROWSER) throws Throwable {
+	public void configBC() throws Throwable {
 		System.out.println("=============launch the browser================");
 	       /*read common Data*/
 
 			 String URL = fLib.getPropertyKeyValue("url");
-			// String BROWSER = fLib.getPropertyKeyValue("browser");
+		 String BROWSER = fLib.getPropertyKeyValue("browser");
 			 /* launch the browser*/
 			  if(BROWSER.equals("chrome")) {
 				  driver = new ChromeDriver();
@@ -48,6 +49,7 @@ public class BaseClass {
 			  }else if(BROWSER.equals("ie")) {
 				  driver = new InternetExplorerDriver();			  
 			  }
+			  staticDriver=driver;
 			  wLib.waitForHTMLDOM(driver);
 			  driver.get(URL);
 	}

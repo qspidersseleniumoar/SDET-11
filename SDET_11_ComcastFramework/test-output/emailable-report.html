@@ -8,95 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">test-Firefox</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">109,951</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">test-Chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">110,320</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">220,271</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">68</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test-Firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crm.autodesk.contacttest.CreateContact</td><td><a href="#m0">cretecontactwithORg</a></td><td rowspan="1">1615293486676</td><td rowspan="1">15900</td></tr><tr><th colspan="4">test-Firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crm.autodesk.contacttest.CreateContact</td><td><a href="#m1">cretecontact</a></td><td rowspan="1">1615293470558</td><td rowspan="1">12622</td></tr><tr class="passedodd"><td rowspan="2">com.crm.autodesk.organizationtest.CreateOrganization</td><td><a href="#m2">createOrgtest</a></td><td rowspan="1">1615293519925</td><td rowspan="1">12906</td></tr><tr class="passedodd"><td><a href="#m3">createOrgtestWithIndustriesType</a></td><td rowspan="1">1615293536187</td><td rowspan="1">10535</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">test-Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.crm.autodesk.organizationtest.CreateOrganization</td><td><a href="#m4">createOrgtest</a></td><td rowspan="1">1615293512869</td><td rowspan="1">26211</td></tr><tr class="failedeven"><td><a href="#m5">createOrgtestWithIndustriesType</a></td><td rowspan="1">1615293543345</td><td rowspan="1">8201</td></tr><tr><th colspan="4">test-Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.crm.autodesk.contacttest.CreateContact</td><td><a href="#m6">cretecontact</a></td><td rowspan="1">1615293451584</td><td rowspan="1">17054</td></tr><tr class="passedeven"><td><a href="#m7">cretecontactwithORg</a></td><td rowspan="1">1615293472251</td><td rowspan="1">21803</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">practice.CommandLineValue</td><td><a href="#m0">test</a></td><td rowspan="1">1615532048382</td><td rowspan="1">10</td></tr></tbody>
 </table>
-<h2>test-Firefox</h2><h3 id="m0">com.crm.autodesk.contacttest.CreateContact#cretecontactwithORg</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: Expected &quot;handle&quot; to be a string, got [object Undefined] undefined
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TY-DEEPAK-TR&apos;, ip: &apos;10.10.11.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210222142601, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2684, moz:profile: C:\Users\Deepak\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0fd5eb8b-3e4b-4c92-9174-b57a292db44d
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
-	at com.crm.comcast.genericlib.WebDriverUtiles.swicthToWindow(WebDriverUtiles.java:123)
-	at com.crm.comcast.objectrepositoryutility.CreateNewConatct.createContact(CreateNewConatct.java:47)
-	at com.crm.autodesk.contacttest.CreateContact.cretecontactwithORg(CreateContact.java:92)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.crm.autodesk.contacttest.CreateContact#cretecontact</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.crm.autodesk.organizationtest.CreateOrganization#createOrgtest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.crm.autodesk.organizationtest.CreateOrganization#createOrgtestWithIndustriesType</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>test-Chrome</h2><h3 id="m4">com.crm.autodesk.organizationtest.CreateOrganization#createOrgtest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;accountname&apos;]&quot;}
-  (Session info: chrome=88.0.4324.190)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TY-DEEPAK-TR&apos;, ip: &apos;10.10.11.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Deepak\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 87b35b495ab564a6b853a8b14c19f150
-*** Element info: {Using=name, value=accountname}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
-	at com.crm.comcast.objectrepositoryutility.CreateNewOrganization.creatOrganization(CreateNewOrganization.java:74)
-	at com.crm.autodesk.organizationtest.CreateOrganization.createOrgtest(CreateOrganization.java:42)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.crm.autodesk.organizationtest.CreateOrganization#createOrgtestWithIndustriesType</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input title=&quot;Save [Alt+S]&quot; accesskey=&quot;S&quot; class=&quot;crmbutton small save&quot; onclick=&quot;this.form.action.value=&apos;Save&apos;;  if(formValidate())AjaxDuplicateValidate(&apos;Accounts&apos;,&apos;accountname&apos;,this.form);&quot; type=&quot;button&quot; name=&quot;button&quot; value=&quot;  Save  &quot; style=&quot;width:70px&quot;&gt; is not clickable at point (471, 231). Other element would receive the click: &lt;td valign=&quot;top&quot;&gt;...&lt;/td&gt;
-  (Session info: chrome=88.0.4324.190)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TY-DEEPAK-TR&apos;, ip: &apos;10.10.11.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Deepak\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 87b35b495ab564a6b853a8b14c19f150
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at com.crm.comcast.objectrepositoryutility.CreateNewOrganization.creatOrganization(CreateNewOrganization.java:56)
-	at com.crm.autodesk.organizationtest.CreateOrganization.createOrgtestWithIndustriesType(CreateOrganization.java:67)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.crm.autodesk.contacttest.CreateContact#cretecontact</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.crm.autodesk.contacttest.CreateContact#cretecontactwithORg</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">practice.CommandLineValue#test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
